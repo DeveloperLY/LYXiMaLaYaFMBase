@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LYXiMaLaYaFMBase_Example' do
+  pod 'LYXiMaLaYaFMBase', :path => '../'
+
+  target 'LYXiMaLaYaFMBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

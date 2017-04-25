@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LYXiMaLaYaFMBase'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LYXiMaLaYaFMBase.'
+  s.summary          = 'LYXiMaLaYaFMBase.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+LYXiMaLaYaFMBase 包含基本的配置、分类、工具类等.
                        DESC
 
   s.homepage         = 'https://github.com/DeveloperLY/LYXiMaLaYaFMBase'
@@ -30,8 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LYXiMaLaYaFMBase/Classes/**/*'
-  
+  # s.source_files = 'LYXiMaLaYaFMBase/Classes/**/*'
+
+  s.subspec 'Category' do |c|
+    c.source_files = 'LYXiMaLaYaFMBase/Classes/Category/**/*'
+  end
+
   # s.resource_bundles = {
   #   'LYXiMaLaYaFMBase' => ['LYXiMaLaYaFMBase/Assets/*.png']
   # }
